@@ -1,0 +1,276 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{tikz} 
+\usepackage{arydshln}
+
+\usepackage[hmargin=3cm,vmargin=6.0cm]{geometry}
+%\topmargin=0cm
+\topmargin=-2cm
+\addtolength{\textheight}{6.5cm}
+\addtolength{\textwidth}{2.0cm}
+%\setlength{\leftmargin}{-5cm}
+\setlength{\oddsidemargin}{0.0cm}
+\setlength{\evensidemargin}{0.0cm}
+
+\begin{document}
+
+\section*{Student Information } 
+%Write your full name and id number between the colon and newline
+%Put one empty space character after colon and before newline
+Full Name :  Damlanur Yağdı\\
+Id Number :  2522118\\
+
+% Write your answers below the section tags
+\section*{Answer 1}
+$$ \sum_{n \geq 2}^\infty = a_n * x^n =  \sum_{n \geq 2}^\infty 3 a_{n-1} * x^n + \sum_{n \geq 2}^\infty 4 a_{n-2}* x^n   $$
+$i)$ Let's assume that $$ A(x) = \sum_{n \geq 0}^\infty = a_n * x^n  $$
+In this case, $$  \sum_{n \geq 2}^\infty = a_n * x^n = A(x) - a_0 - a_1 x  = A(x) - 1 - x$$
+$ii)$ Now let's consider $$ \sum_{n \geq 2}^\infty 3 a_{n-1} * x^n $$
+We know that, $$ \sum_{n \geq 2}^\infty 3 a_{n-1} * x^n = \sum_{n \geq 1}^\infty 3 a_{n} * x^{n+1} = 3x \sum_{n \geq 1}^\infty a_{n} * x^n$$
+That's why we can say that: $$ \sum_{n \geq 1}^\infty  a_{n} * x^n  = A(x) - a_0 = A(x) - 1 \\
+$$ $$
+3x \sum_{n \geq 1}^\infty a_{n} * x^n = 3x(A(x) - 1)
+$$
+$iii)$ Lastly, we should realize that $$ \sum_{n \geq 2}^\infty 4 a_{n-2}* x^n = \sum_{n \geq 0}^\infty 4 a_{n}* x^{n+2} = 4 x^2 \sum_{n \geq 0}^\infty a_{n}* x^n = 4 x^2 ( A(x) )$$
+When we substitute these values, we have the equation: $$ A(x) - 1 - x = 3x(A(x) - 1) +  4 x^2 ( A(x) )$$
+$$ A(x) = \frac{1 - 2x}{(1 - 4x)(1 + x)} = \frac{A}{(1 - 4x)} + \frac{B}{(1 + x)} $$
+
+$$  A + Ax + B + -4Bx = 1 - 2x$$
+
+$$ A = \frac{2}{5} , B = \frac{3}{5}$$
+
+$$ A(x) =  \frac{2}{5} \frac{1}{(1 - 4x)} + \frac{3}{5} \frac{1}{(1 + x)} $$
+
+$$ A(x) = \frac{2}{5} \sum_{n \geq 0}^\infty (4x)^n + \frac{3}{5} \sum_{n \geq 0}^\infty (-x)^n = \sum_{n \geq 0}^\infty x^n  \left( \frac{2}{5} (4)^n + \frac{3}{5} (-1)^n ) \right) $$
+We have come to the conclusion $$ a_n =  \frac{2}{5} (4)^n + \frac{3}{5} (-1)^n $$
+
+
+
+
+\section*{Answer 2}
+\subsection*{a) }
+
+Let's choose a function $A(x)$ which is: $$ A(x) = 2 + 5x + 11x^2 + 29x^3 + 83x^4 + 245x^5 + ..... $$
+$$ = (2 + 2x + 2x^2 + 2x^3 + 2x^4 + ...) + (3x + 9x^2 + 27x^3 + 81x^4 + ....)$$
+$$ = 2(1 + x + x^2 + x^3 + x^4 + ...) + 3x(1 + 3x + 9x^2 + 27x^3 + ...)$$
+It can be observed that: $$  \sum_{n = 0}^\infty x^n = 1 + x + x^2 + ... = \frac{1}{1-x}$$ 
+$$ \sum_{n = 0}^\infty (3x)^n = 1 + 3x + 9x^2 + ... = \frac{1}{1-3x} $$
+Hence, we have found our generating function as: $$ A(x) = 2 \left(\frac{1}{1-x} \right) + 3x \left(\frac{1}{1-3x} \right) = \frac{-3x^2 -3x + 2}{(1-x)(1-3x)} = \frac{-3x^2 -3x + 2}{(1 - 4x + 3x^2)}$$
+
+
+
+
+
+
+\subsection*{b) }
+
+$$ G(x) = \frac{7-9x}{(1-3x+2x^2)} = \frac{7-9x}{(1-2x)(1-x)} = \frac{A}{1-2x} + \frac{B}{1-x}$$\\
+$$  A ( 1 - x ) + B ( 1 - 2x ) = 7 - 9x \to A = 5, B = 2 $$\\
+$$  G(x) = \frac{5}{1-2x} + \frac{2}{1-x} = 5 \left ( \frac{1}{1-2x} \right) + 2 \left( \frac{1}{1-x} \right) $$
+$$  \frac{1}{1-2x} = \sum_{n = 0}^\infty (2x)^n $$
+$$  \frac{1}{1-x} = \sum_{n = 0}^\infty (x)^n  $$
+$$ G(x) = \sum_{n = 0}^\infty 5(2x)^n + \sum_{n = 0}^\infty 2 (x)^n $$
+$$ G(x) = \sum_{n = 0}^\infty (x)^n (5*2^n +2) $$
+Hence $a_n = 5*2^n + 2$ and the sequence is $<7,12,22,42,82,162,....>$.
+
+
+
+
+
+
+\section*{Answer 3}
+\subsection*{a) }
+
+
+$aRb$ iff there exists a right triangle that has the edges $a, b, n$ where $n \in Z$
+represents Pythagoras' Theorem.\\
+Pythagoras' Theorem says that there exist three positive integers $a, b$, and $n$ such that $\sqrt{a^2+b^2} = n$. $a$, $b$ and $n$ can be swapped, such as $\sqrt{a^2 + n^2} = b $ or $\sqrt{b^2 + n^2} = a$\\
+In line with this information, we can check whether $R$ is an equivalence relation, or not.\\
+
+In order to be an equivalence relation, $R$ must meet these conditions:\\
+
+1. It should be reflexive.\\
+
+2. It should be symmetric.\\
+
+3. It should be transitive.\\
+
+\begin{itemize}
+    \item Let's first check if $R$ is reflexive:\\
+    If $R$ is reflexive, then we should be able to construct a relationship like $aRa$ which satisfies $\sqrt{a^2 + a^2} = n $, or $\sqrt{a^2 + n^2} = a $ , or $\sqrt{n^2 + a^2} = a $.\\
+    
+    In the first equation ( $\sqrt{a^2 + a^2} = n$  ), we find a solution such that $n=a\sqrt{2}$\\
+    
+    However, our question says that $n \in Z$ in the beginning, and according to the theorem $a$ must be a positive integer, which creates a contradiction with the solution $ n= a\sqrt{2}$. \\
+
+    In the second and third equation ($\sqrt{a^2 + n^2} = a $ , $\sqrt{n^2 + a^2} = a $) , we find a solution such that $n = 0$, which is impossible to create a right triangle. \\
+
+
+   
+    That is why $R$ is not an equivalence relation.\\
+
+    Since $R$ is not an equivalence relation, there is no equivalence class of 3.
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection*{b) }
+
+In order to be an equivalence relation, $R$ must meet these conditions:\\
+1. It should be reflexive.\\
+2. It should be symmetric.\\
+3. It should be transitive.
+
+
+\begin{itemize}
+    \item Let's check first if it is reflexive. \\
+$$ x_2 = x_1 , y_2 = y_1 \to (x_1,y_1)R(x_1,y_1) \iff 2x_1 + y_1 = 2x_1 + y_1  $$
+
+So, it is reflexive.
+
+\item Second, we should check if it is symmetric.
+$$ (x_1,y_1)R(x_2,y_2) \iff 2x_1 + y_1 = 2x_2 + y_2 $$
+$$ (x_2,y_2)R(x_1,y_1) \iff 2x_2 + y_2 = 2x_1 + y_1 $$
+
+So, $R$ is symmetric.
+\item Lastly, we need to find if it is transitive. We already know that
+$$ (x_1,y_1)R(x_2,y_2) \iff 2x_1 + y_1 = 2x_2 + y_2  $$
+Let's change left side of R as $ x_1 = x_2 , y_1 = y_2$ and right side of it as $x_2 = x_3 , y_2 = y_3   $ So we have:
+$$ (x_2,y_2)R(x_3,y_3) \iff 2x_2 + y_2 = 2x_3 + y_3  $$\\
+Since $ 2x_2 + y_2 = 2x_3 + y_3 $ we can substitute $2x_2 + y_2$ with $2x_3 + y_3$ in the first equation accordingly. As a result we have $2x_1 + y_1 = 2x_3 + y_3$
+
+Hence we have proven that $R$ is transitive.
+
+
+    \item Finally, since $R$ is both reflexive, symmetric, and transitive, we can conclude that $R$ is an equivalence relation. 
+    \item Since $R$ is an equivalence relation, now we can find an equivalence class of (1, -2).\\
+    For the equivalence class of (1 , -2) we should find (x , y) pairs satisfying the condition of  $ 2*(1) + (-2) = 2x + y $\\
+    After calculations, we find  2x + y = 0 which represents the y = -2x line in the Cartesian coordinate system.
+
+\end{itemize}
+
+\section*{Answer 4}
+
+\subsection*{a) }
+
+We should first find a's and b's. To do this we should check the values in $A$.
+\begin{itemize}
+    \item If a = 2, then b can be 2, 10, 18, and 60. Connections are (2,2), (2,10), (2,18), and (2,60).
+    \item If a = 5, then b can be both 10 and 60. Connections are (5,5), (5,10), (5,60).
+    \item If a = 10, then b can be 10 and 60. Connections are (10,10), (10, 60).
+    \item If a = 18, then b can be only 18. Connection is (18,18).
+    \item If a = 60, then b can be only 60. Connection is (60,60).
+\end{itemize}
+To draw Hasse Diagram, we should remove all loops, and also the connections that can be made by transitive property.\\
+So the rest of the connections are (2,10), (5,10), (10,18), and (10,60).\\
+
+\begin{center}
+
+\begin{tikzpicture}[node distance={15mm}, thick, main/.style = {draw, circle}] 
+\node[main] (1) {$18$}; 
+%\node[main] (2) [above right of=1] {$x_2$}; 
+\node[main] (3) [below right of=1] {$2$}; 
+\node[main] (4) [above right of=3] {$10$}; 
+\node[main] (5) [above of=4] {$60$}; 
+\node[main] (6) [below right of=4] {$5$}; 
+
+\draw[-] (1) -- (3); 
+
+ 
+\draw (3) -- (4); 
+\draw (5) -- (4); 
+
+\draw[-] (6) -- node[midway, above right, sloped, pos=1] {} (4); 
+\end{tikzpicture} 
+
+    
+\end{center}
+
+
+    
+
+
+
+\subsection*{b) }
+
+$$A = \{2, 5, 10, 18, 60\}$$
+$$R = \{ (2,2), (2,10), (2,18), (2,60), (5,5), (5,10), (5,60), (10,10), (10, 60), (18,18), (60,60)  \}$$
+$$
+\left[
+\begin{array}{c;{5pt/5pt}ccccc}
+       & 2 &5 &10&18&60 \\ \hdashline[5pt/5pt]
+     2 & 1 &0 &1 &1 &1   \\
+     5 & 0 &1 &1 &0 &1   \\
+     10& 0 &0 &1 &0 &1\\
+     18& 0 &0 &0 &1 &0 \\
+     60& 0 &0 &0 &0 &1\\
+\end{array}
+\right]
+$$
+
+
+
+
+\subsection*{c) }
+
+For the symmetric closure of $R$ ($R_S$), we should also take the values which b divides a.\\
+Because of that, \\
+ $R_S = \{(2,2), (2,10), (2,18), (2,60), (5,5), (5,10), (5,60), (10,10), (10, 60),(18,18), (60,60), (10,2),\\ (10,5), (18,2), (60,2), (60,5), (60,10) \}$.\\
+
+That is why our matrix representation is:\\
+$$
+\left[
+\begin{array}{c;{5pt/5pt}ccccc}
+       & 2 &5 &10&18&60 \\ \hdashline[5pt/5pt]
+     2 & 1 &0 &1 &1 &1   \\
+     5 & 0 &1 &1 &0 &1   \\
+     10& 1 &1 &1 &0 &1\\
+     18& 1 &0 &0 &1 &0 \\
+     60& 1 &1 &1 &0 &1\\
+\end{array}
+\right]
+$$
+The question asks for the list of all pairs $(x, y)$ where $(x, y) \in R_S \land (x, y) \notin R$.\\
+So, the list is:\\
+$$ [(10,2), (10,5), (18,2), (60,2), (60,5), (60,10)] $$
+
+
+
+\subsection*{d) }
+
+\begin{itemize}
+    \item Total ordering can be described as follows. If every two elements of A are comparable and related, then we can create total ordering.
+    \item Let's look at our incomparable relations which are: $$(2,5), (5,18), (10,18), (18, 60)$$ 
+     It is clear that 5 and 18 are the troublemaker elements since they are incomparable with more than 1 element.\\
+     
+    \item In line with this information, let's remove element 5 and add another one. If we remove 5, element 18 will be still a troublemaker. Because it will have an incomparable relation with 10 and 60 again.\\
+    
+     Hence, it is not possible to create a total ordering that includes all elements of $A$, when we remove a single element in A and add another element. 
+     \item Now, let's remove 5 and 18 since they are the troublemakers. Moreover, let's add 20 since it has a comparable relation with both 2, 10, and 60 ($ 20\mod2 = 60\mod20 = 20\mod10 = 0$). \\
+     It is clear that all of these elements are comparable with each other and there is no troublemaker anymore. Hence, it is possible to create a total ordering that includes all elements of $A$.
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
