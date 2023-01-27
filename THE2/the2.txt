@@ -1,0 +1,242 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+\usepackage{amsmath}
+
+\usepackage[hmargin=3cm,vmargin=6.0cm]{geometry}
+%\topmargin=0cm
+\topmargin=-2cm
+\addtolength{\textheight}{6.5cm}
+\addtolength{\textwidth}{2.0cm}
+%\setlength{\leftmargin}{-5cm}
+\setlength{\oddsidemargin}{0.0cm}
+\setlength{\evensidemargin}{0.0cm}
+
+%misc libraries goes here
+
+\begin{document}
+
+\section*{Student Information } 
+%Write your full name and id number between the colon and newline
+%Put one empty space character after colon and before newline
+Full Name :  Damlanur Yağdı\\
+Id Number : 2522118\\
+
+% Write your answers below the section tags
+\section*{Answer 1}
+\paragraph{a)} % For f_1
+
+The function $ f (x) = x^2 $ from the set of real numbers to the set of real numbers is not one-to-one. To see this, note that if $f (x) = f (y)$, then $x^2 = y^2$, so
+$ x^2 $ $-$ $y^2 $ = $(x + y)(x - y) =  0 $. This means that $ x + y = 0 $  or $ x-y = 0 $, so $x = -y$ or $x = y$. Since our domain is set of real numbers  $x$ might be both positive and negative. Hence, it is not injective. \\For example, $f(-1) = f(1) = 1$\\
+$=$ \textbf{\textbf{Not Injective}}\\
+Furthermore, $f (x) = x^2$ is not onto when the codomain is the set of all  real numbers,
+because negative real numbers don't have a square root and also we cannot find a real number whose square is negative. \\
+$=$ \textbf{Not Surjective}\\
+
+\paragraph{b)} % For f_2
+The function $ f (x) = x^2 $ from the set of nonnegative real numbers to the set of real numbers is one-to-one. To see this, note that if $f (x) = f (y)$, then $x^2 = y^2$, so
+$ x^2 $ $-$ $y^2 $ = $(x + y)(x - y) =  0 $. This means that $ x + y = 0 $  or $ x-y = 0 $, so $x = -y$ or $x = y$.
+Because both  $x$ and $y$are nonnegative, we must have $ x = y $. So, this function is one-to-one. \\
+$=$ \textbf{\textbf{Injective}}\\
+Furthermore, $f (x) = x^2$ is not onto when the codomain is the set of all  real numbers,
+because negative real numbers don't have a square root. \\
+$=$ \textbf{Not Surjective}\\
+
+
+
+
+
+\paragraph{c)}
+The function $ f (x) = x^2 $ from the set of real numbers to the set of nonnegative real numbers is not one-to-one. To see this, note that if $f (x) = f (y)$, then $x^2 = y^2$, so
+$ x^2 $ $-$ $y^2 $ = $(x + y)(x - y) =  0 $. This means that $ x + y = 0 $  or $ x-y = 0 $, so $x = -y$ or $x = y$.
+Since our domain is set of real numbers  $x$ might be both positive and negative. Hence, it is not injective. \\For example, $f(-1) = f(1) = 1$\\
+$=$ \textbf{\textbf{Not Injective}}\\
+Furthermore, $f (x) = x^2$ is onto when the codomain is the set of all nonnegative real numbers,
+because each nonnegative real number has a square root. That is, if y is a nonnegative real
+number, there exists a nonnegative real number x such that $x = \sqrt{y} $, which means that $x^2 = y $.
+Because the function $ f (x) = x^2 $ from the set of real numbers to the set of nonnegative real numbers is onto. \\
+$=$ \textbf{Surjective}\\
+
+
+
+
+
+\paragraph{d)} 
+The function $ f (x) = x^2 $ from the set of nonnegative real numbers to the set of nonnegative real numbers is one-to-one. To see this, note that if $f (x) = f (y)$, then $x^2 = y^2$, so
+$ x^2 $ $-$ $y^2 $ = $(x + y)(x - y) =  0 $. This means that $ x + y = 0 $  or $ x-y = 0 $, so $x = -y$ or $x = y$.
+Because both  $x$ and $y$are nonnegative, we must have $ x = y $. So, this function is one-to-one. \\
+$=$ \textbf{\textbf{Injective}}\\
+Furthermore, $f (x) = x^2$ is onto when the codomain is the set of all nonnegative real numbers,
+because each nonnegative real number has a square root. That is, if y is a nonnegative real
+number, there exists a nonnegative real number x such that $x = \sqrt{y} $, which means that $x^2 = y $.
+Because the function $ f (x) = x^2 $ from the set of nonnegative real numbers to the set of nonnegative real numbers is one-to-one and onto. \\
+$=$ \textbf{Surjective}\\
+
+
+\section*{Answer 2}
+\paragraph{a)}
+
+Let $D 	\subseteq $\mathbb{R}$ $ A function $f:D \to $\mathbb{R}$ $ is continuous at some $x_0 \in D$ for each $ \epsilon > 0 $ there should be some $ \delta > 0 $ for any $ x \in D $ with $ |x - x_0| < \delta $. So,  we can construct $ |f(x) - f(x_0)| < \epsilon  $. Let's choose a function $ f: $\mathbb{Z}$ \to $\mathbb{R}$ $ pick $x_0 \in $ $\mathbb{Z}$ and choose \epsilon > 0$. After this point, we need to find $\delta$ such that it satisfies the statement of continuity. Let's choose $\delta = 1/7$\\
+Let's say $x \in \mathbb{Z}$  and $|x - x_0| < \delta = 1/7 $. Because the only integer within 1/7 distance of $x_0$ is itself, we have $x = x_0$. Therefore, $f(x) = f(x_0)$, accordingly $|f(x) - f(x_0)| = 0$ . We can easily see that it is lesser than $\epsilon$. Now that we have proven that $f$ is continuous at $x_0$. Because we have chosen $x_0$ arbitrarily, it shows us that $f$ is continuous everywhere in its domain.
+
+
+
+
+
+
+
+
+\paragraph{b)}
+
+Because if $f$ were not a constant function, it would be creating discontinuity. Since the image set is all $\mathbb{Z}$, if $f$ were not a constant function, there would be some points which are not in the image set's domain. For example, let's imagine that $f(1) = 1 $ and $f(2) = 2$. What about the values between 1 and 2? Since our codomain consist of integers, it won't be taking the values between 1 and 2. So, it won't be continuous. That's why our function $f$ should be a constant function. Because, otherwise $f$ is not continuous.
+
+
+
+
+
+
+
+
+
+\section*{Answer 3}
+\paragraph{a)}
+\begin{itemize}
+  \item For example, if both $A_1$, $A_2$ and ... $A_n$ are finite with $|A_1| = m$ and let's say $|A_2| = n$ , we can show that $|A_1 $ x $ A_2| = mn$. Hence $A_1 $ x $ A_2 $ is finite. So it is countable.
+%  \item  If $A_1$ is finite with $|A_1| = n$ and $ A_n $ is countably infinite, there should be bijective functions such that $f: A_1 \to \{ 1,2,....,n \}$ and $g: A_2 \to \mathbb{N}$. Let's say $h: A_1 $ x $A_2$ $\to \mathbb{N}$ for all $(a,b)$ $\in$$A_1 x $A_2$ by: 
+  \item If A and B are both countable then there exists bijective functions such that $f: A \to $ $\mathbb{Z}$  and $g: B \to$ $\mathbb{Z}$ and defining $ h: A  \times B\to  \mathbb{Z^2}$  gives us an injective function, since the set of positive integers $\mathbb{Z^+}$ , $ \mathbb{Z} $ and $\mathbb{Z} \times \mathbb{Z}$ have the same cardinality. So $A \times B$ is countable. ■
+
+\end{itemize}
+
+
+
+
+
+\paragraph{b)}
+
+$ \{ En \}_{n\in\mathbb{N}}  $ is a sequence of countable sets and $S=E_1 \times $...$\times E_n \times $...$ $
+
+By the definition of Cartesian product of sets,
+
+\begin{center}
+
+
+$ S = \Pi_{n\in\mathbb{N}} \{f: \mathbb{$N$} \to  \bigcup_{n\in\mathbb{N}} E_n | \forall n, f(n) \in E_n   \}  $
+    
+\end{center}
+If $E_n=\{0,1\} $ , then
+
+\begin{center}
+
+$ S_{01} = \Pi_{n\in\mathbb{N}} \{0,1\} = E^\mathbb{N} $
+    
+\end{center}
+,where $E = \{0,1\}$ .
+By a theorem, $\bigcup_{n\in\mathbb{N}} E_n$ is countable since the sequence is countable.
+By using Cantor's diagonalization, we can suppose $S$ is countable. Let $(F_n : n \in \mathbb{N}) $ be an enumeration of $S$. For each $n$, I picked two points which are $a_n , b_n \in E_n $.Defining a new function $F \in S$ as follows:
+
+
+\begin{center}
+
+
+$F(m) = b_m$ if $F_m(m) = a_m $ \\
+$F(m) = a_m$ otherwise 
+
+    
+\end{center}
+It follows that $F \in S$ but it is different of all $F_n $'s which is a contradiction. 
+
+
+
+
+
+\section*{Answer 4}
+
+\begin{center}
+$( \log n )^2$ , $\sqrt{n}$log$n$ , $n^{50}$ , $n^{51} + n^{49} $, $2^n $, $5^n$ , $(n!)^2 $ \hline   
+\end{center}
+
+\paragraph{a)} % Compare your first and second functions
+
+
+$ \lim_{x\to\infty}  $$  \frac{\sqrt{n}logn}{(logn)^2}  $=  $\lim_{x\to\infty}  $$  \frac{\sqrt{n}}{logn}  $ = $\lim_{x\to\infty}  $$  \frac{\sqrt{n} (\ln{10})}{2}  $ (By L'Hospital Rule) = $ \infty$ \\  
+Since it goes to infinity, we can conclude that $\sqrt{n}$log$n$ $>$ $( \log n )^2$ , and $($logn$)^2 = O(\sqrt{n}$log n$)$.
+
+
+
+\paragraph{b)} % Compare your second and third functions
+
+% $ \lim_{x\to\infty}  $$  \frac{2^n}{\sqrt{n}logn}  $= $ \lim_{x\to\infty}  $$  \frac{(2^n)* \ln{2}* 2\sqrt{n} * \ln{10}}{(\log n * \ln{10})  + 2} $(By L'Hospital Rule)$\\
+% $ = $ \lim_{x\to\infty}  $$ ((2^n)* ( \ln{2})^2 * 2\sqrt{n} * \ln{10} * n ) + ((2^n)* \ln{2} * \ln{10} * \sqrt{n})  $ = $\infty $ \\
+ % Since it goes to infinity, we can conclude that $2^n$ $>$ $\sqrt{n}$log$n$ .
+ 
+$ \lim_{x\to\infty}  $$  \frac{n^{50}}{\sqrt{n}logn}  $= $\frac{99}{2} * n^{\frac{99}{2}} * \ln{10}$ (By L'Hospital Rule) $=$ $ \infty $ \\
+Since it goes to infinity, we can conclude that $ n^{50}$ $ > $ $ \sqrt{n}$log$ n $, and $\sqrt{n}$log n$ = O(n^{50}) $.
+
+\paragraph{c)}
+$ \lim_{x\to\infty}  $$  \frac{n^{51} + n^{49}}{n^{50}}  $ $=$ $ \lim_{x\to\infty}  $ $ n +  \frac{1}{n}  $ $=$ $ \infty$ \\
+Since it goes to infinity, we can conclude that $ n^{51} + n^{49} $ $ > $ $ n^{50} $ , and $ n^{50} = O(n^{51} + n^{49})  $.
+
+
+
+\paragraph{d)}
+
+
+$ \lim_{x\to\infty}  $ $  \frac{2^n}{n^{51} + n^{49}} $ $=$ $ \lim_{x\to\infty}  $ $  \frac{2^n * \ln{2}}{51n^{50} + 49n^{48}} $ (By L'Hospital Rule) $=$ $ \lim_{x\to\infty}  $ $  \frac{2^n * (\ln{2})^{51}}{51!} $ (By using L'Hospital Rule several times) $=$ $\infty$ \\
+Since it goes to infinity, we can conclude that $ 2^n $ $ > $ $ n^{51} + n^{49} $ ,and $n^{51} + n^{49} = O(2^n) $.
+
+\paragraph{e)}
+
+$ \lim_{x\to\infty}  $ $  \frac{5^n}{2^n}  $= $ \lim_{x\to\infty}  $ $  (\frac{5}{2})^n $ $=$ $ \infty$ \\
+Hence, since it goes to infinity, we can conclude that $5^n$ $>$ $2^n$ ,and $ 2^n = O(5^n)$.
+\paragraph{f)}
+
+For the comparison of $5^n$ and $(n!)^2$ , we know that for $n$ = 5 we have $5^n = 3125 < (n!)^2 = 14400.$ Using this for $ n \geq 5$ we can establish that $(n!)^2$ grows faster:\\
+
+\begin{center}
+    $5^n = 5^5 * 5^{n-5} \leq (5!)^2 * 5^{n-5} \leq (5!)^2 * (\frac{n!}{5!})^2 = n! $ \\
+\end{center}
+Here, we made use of the fact that $5^{n-5}$ has $n-5$ elements, all of which are lesser than those in $(\frac{n!}{5!})^2$ which also has $n-5$ elements. Hence, we can conclude that $(n!)^2$ $>$ $5^n$ ,and $5^n = O((n!)^2)$.
+
+
+
+
+\section*{Answer 5}
+\paragraph{a)\\}
+
+\begin{center}
+    
+
+Since for $ a \geq b \geq 0 $ ,\\
+\begin{tabular}{c c c c}
+
+gcd(a , b) & $\equiv $ & gcd(b,a mod b) & by Euclidean Algorithm \\ \\
+
+
+    
+
+gcd(94, 134) & $\equiv$ & gcd(134,94) & \\
+& $\equiv$ & gcd(94, 40) &\\
+& $\equiv$ & gcd(40, 14) &\\
+& $\equiv$ & gcd(14, 12) &\\
+& $\equiv$ & gcd(12, 2) &\\
+& $\equiv$ & gcd(2,0) &\\
+& $\equiv$ & 2 &\\
+
+
+\end{tabular}
+\end{center}
+
+
+\paragraph{b)}
+ I assumed that every even integer greater than 2 is the sum of two primes according to Goldbach’s conjecture, and I have choosen n which is an integer greater
+than 5. If n is odd, then we can write n = 3 + (n - 3), decompose n - 3 = p + q into the sum of two primes
+(since n - 3 is an even integer greater than 2), and therefore have written n = 3 + p + q as the sum of three
+primes. If n is even, we can write n = 2 + ( n - 2), decompose n - 2 = p + q into the sum of two primes
+(since n - 2 is an even integer greater than 2), and therefore have written n = 2 + p + q as the sum of three
+primes. \\For the converse, I assumed that every integer greater than 5 is the sum of three primes, and again I have chosen n which is
+an even integer greater than 2. By our assumption we can write n + 2 as the sum of three primes. Since
+n + 2 is even, these three primes cannot all be odd, so we have n + 2 = 2 + p + q, where p and q are primes,
+hence n = p + q, as desired. \\
+
+
+\end{document}
